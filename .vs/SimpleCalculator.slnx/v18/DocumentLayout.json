@@ -1,0 +1,44 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\akschatz1s\\Documents\\C#\\ExStarts\\ch06\\SimpleCalculator\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AA70AF84-56C5-4481-8096-9D8D4E9F80A9}|SimpleCalculator\\SimpleCalculator.csproj|c:\\users\\akschatz1s\\documents\\c#\\exstarts\\ch06\\simplecalculator\\simplecalculator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AA70AF84-56C5-4481-8096-9D8D4E9F80A9}|SimpleCalculator\\SimpleCalculator.csproj|solutionrelative:simplecalculator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\akschatz1s\\Documents\\C#\\ExStarts\\ch06\\SimpleCalculator\\SimpleCalculator\\Form1.cs",
+              "RelativeDocumentMoniker": "SimpleCalculator\\Form1.cs",
+              "ToolTip": "C:\\Users\\akschatz1s\\Documents\\C#\\ExStarts\\ch06\\SimpleCalculator\\SimpleCalculator\\Form1.cs [Design]",
+              "RelativeToolTip": "SimpleCalculator\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-14T18:41:10.109Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
