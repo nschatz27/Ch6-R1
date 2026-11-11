@@ -28,63 +28,66 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.txtOperand1 = new System.Windows.Forms.TextBox();
+            this.txtOperator = new System.Windows.Forms.TextBox();
+            this.txtOperand2 = new System.Windows.Forms.TextBox();
+            this.txtResult = new System.Windows.Forms.TextBox();
+            this.btnCalculate = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtOperand1
             // 
-            this.textBox1.Location = new System.Drawing.Point(125, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
+            this.txtOperand1.Location = new System.Drawing.Point(125, 12);
+            this.txtOperand1.Name = "txtOperand1";
+            this.txtOperand1.Size = new System.Drawing.Size(100, 20);
+            this.txtOperand1.TabIndex = 0;
             // 
-            // textBox2
+            // txtOperator
             // 
-            this.textBox2.Location = new System.Drawing.Point(125, 38);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(35, 20);
-            this.textBox2.TabIndex = 1;
+            this.txtOperator.Location = new System.Drawing.Point(125, 38);
+            this.txtOperator.Name = "txtOperator";
+            this.txtOperator.Size = new System.Drawing.Size(35, 20);
+            this.txtOperator.TabIndex = 1;
             // 
-            // textBox3
+            // txtOperand2
             // 
-            this.textBox3.Location = new System.Drawing.Point(125, 64);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 2;
+            this.txtOperand2.Location = new System.Drawing.Point(125, 64);
+            this.txtOperand2.Name = "txtOperand2";
+            this.txtOperand2.Size = new System.Drawing.Size(100, 20);
+            this.txtOperand2.TabIndex = 2;
             // 
-            // textBox4
+            // txtResult
             // 
-            this.textBox4.Location = new System.Drawing.Point(125, 90);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 3;
+            this.txtResult.Location = new System.Drawing.Point(125, 90);
+            this.txtResult.Name = "txtResult";
+            this.txtResult.ReadOnly = true;
+            this.txtResult.Size = new System.Drawing.Size(100, 20);
+            this.txtResult.TabIndex = 3;
             // 
-            // button1
+            // btnCalculate
             // 
-            this.button1.Location = new System.Drawing.Point(38, 140);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "&Calculate";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCalculate.Location = new System.Drawing.Point(38, 140);
+            this.btnCalculate.Name = "btnCalculate";
+            this.btnCalculate.Size = new System.Drawing.Size(75, 23);
+            this.btnCalculate.TabIndex = 4;
+            this.btnCalculate.Text = "&Calculate";
+            this.btnCalculate.UseVisualStyleBackColor = true;
+            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
             // 
-            // button2
+            // btnExit
             // 
-            this.button2.Location = new System.Drawing.Point(139, 140);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "E&xit";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnExit.Location = new System.Drawing.Point(139, 140);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.TabIndex = 5;
+            this.btnExit.Text = "E&xit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // label1
             // 
@@ -131,12 +134,12 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnCalculate);
+            this.Controls.Add(this.txtResult);
+            this.Controls.Add(this.txtOperand2);
+            this.Controls.Add(this.txtOperator);
+            this.Controls.Add(this.txtOperand1);
             this.Name = "Form1";
             this.Text = "Simple Calculator";
             this.ResumeLayout(false);
@@ -146,12 +149,12 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox txtOperand1;
+        private System.Windows.Forms.TextBox txtOperator;
+        private System.Windows.Forms.TextBox txtOperand2;
+        private System.Windows.Forms.TextBox txtResult;
+        private System.Windows.Forms.Button btnCalculate;
+        private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
